@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
-    // Declarando as variáveis
-    real formaDePagamento, pagamentoVista, pagamentoPrazo
+    // Declarando as variÃ¡veis
+    real formaDePagamento
     real valorProduto, desconto, parcelas, valorDesconto, totalPagar, valorPorParcela, totalPrazo
 
     // Campo para o usuario preencher
@@ -15,14 +15,14 @@ programa {
     leia(formaDePagamento)
     limpa()
 
-    // Verificando as opções de acordo com a escolha do cliente
+    // Verificando as opÃ§Ãµes de acordo com a escolha do cliente
     escolha(formaDePagamento){
 
       caso 1:
         desconto = valorProduto * 0.10
         escreva("\nForma de pagamento a vista")
         escreva("\nValor do produto: R$ ", valorProduto)
-        escreva("\nO valor do desconto é de: R$ ", desconto)
+        escreva("\nO valor do desconto Ã© de: R$ ", desconto)
         totalPagar = valorProduto - desconto
         escreva("\nTotal a pagar: R$ ", totalPagar)
         
@@ -39,6 +39,7 @@ programa {
         escreva("\nValor por parcela: R$ ", valorPorParcela)
         totalPrazo = valorPorParcela * parcelas
         escreva("\nTotal a prazo: R$ ", totalPrazo)
+      pare
       
     }
 
